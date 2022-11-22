@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ABCConfig>
+  <PrintPage>
+    <ExcPrinters>1837,1838</ExcPrinters>
+    <ControlPrinters>PDF_WEB,Tark4,PDF_GNMobiVariant</ControlPrinters>
+    <WorkStates>
+      <ProductionPrintedId>1744</ProductionPrintedId>
+    </WorkStates>
+  </PrintPage>
+  <TagsValidation>
+	<RepFolderIds></RepFolderIds>
+	<EditFolderIds></EditFolderIds>
+  </TagsValidation>
+  <TimelineSegmentImage>
+	<Width>
+	</Width>
+	<Height>
+	</Height>
+	<FolderId>
+	</FolderId>
+  </TimelineSegmentImage>
+  <ImageDummyClass>
+		<Width>10.5cm</Width>
+		<Height>20.4cm</Height>
+		<X>0.5cm</X>
+		<Y>0.6cm</Y>
+  </ImageDummyClass>
+ 
+</ABCConfig>
