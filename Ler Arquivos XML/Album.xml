@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Album name="Album Milo" description="techno">
+<Genre>Techno</Genre>
+<Tracks>
+	<Track name="Alfa">
+		<Path>C:\temp\Alfa.mp3</Path>
+	</Track>
+	<Track name="Beta">
+		<Path>C:\temp\Beta.mp3</Path>
+	</Track>
+	<Track name="Gama">
+		<Path>C:\temp\Gama.mp3</Path>
+	</Track>
+	<Track name="Delta">
+		<Path>C:\temp\Delta.mp3</Path>
+	</Track>
+	<Track name="Epsilon">
+		<Path>C:\temp\Epsilon.mp3</Path>
+	</Track>
+
+</Tracks>
+
+</Album>
