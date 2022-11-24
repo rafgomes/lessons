@@ -18,7 +18,7 @@ namespace Leitor_ABCConfig
             ABCConfig classes = parser.GetABCConfig(@"C:\Projets\abcparaguay\src\config\ABCConfig.xml");
 
             var printer = new IDCPrinter();
-            printer.PrintIDC(idclasses);
+            //printer.PrintIDC(idclasses);
             
 
 
