@@ -25,7 +25,6 @@ namespace Leitor_ABCConfig.Libs.Parsers
                 var abcConfig = (ABCConfig)serializer.Deserialize(reader);
                 return abcConfig;
             }
-
         }
     }
 }

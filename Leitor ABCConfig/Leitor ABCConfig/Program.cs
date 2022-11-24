@@ -19,12 +19,7 @@ namespace Leitor_ABCConfig
 
             var printer = new IDCPrinter();
             printer.PrintIDC(classes.ImageDummyClass);
-                        
-
-
-
-
-
+                   
             Console.ReadLine();
         }
 

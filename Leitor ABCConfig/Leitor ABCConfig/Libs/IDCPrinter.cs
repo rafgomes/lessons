@@ -16,7 +16,5 @@ namespace Leitor_ABCConfig.Libs
                 Console.WriteLine($"Name: {imageDummyClass.Name} // Width = {imageDummyClass.Width} // Height = {imageDummyClass.Height} // X = {imageDummyClass.X} // Y = {imageDummyClass.Y}");
             }
         }
-
-
     }
 }
