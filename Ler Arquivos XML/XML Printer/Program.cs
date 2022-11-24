@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.ConstrainedExecution;
 using System.Runtime.InteropServices.ComTypes;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
@@ -32,7 +33,6 @@ namespace XML_Printer
 
             //Console.WriteLine($"Height = {H} / Width = {W} / X = {X} / Y = {Y}");
 
-
             //Console.ReadLine();
 
             //=================================================================================================
@@ -50,15 +50,14 @@ namespace XML_Printer
 
                 Console.WriteLine($"Faixa: {trackName} em {path}");
 
-                //string mesmaTrackName = faixa.SelectSingleNode("@name").Value;
-                //Console.WriteLine($"Faixa: {faixa} em {path}");
-
             }
-
-
-    
-
             Console.ReadLine();
+
+
+
+
         }
+
+
     }
 }

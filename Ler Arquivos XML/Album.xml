@@ -3,20 +3,12 @@
 <Genre>Techno</Genre>
 <Tracks>
 	<Track name="Alfa">
-		<Path>C:\temp\Alfa.mp3</Path>
+		<Path>Path0</Path>
 	</Track>
 	<Track name="Beta">
-		<Path>C:\temp\Beta.mp3</Path>
+		<Path>Path1</Path>
 	</Track>
-	<Track name="Gama">
-		<Path>C:\temp\Gama.mp3</Path>
-	</Track>
-	<Track name="Delta">
-		<Path>C:\temp\Delta.mp3</Path>
-	</Track>
-	<Track name="Epsilon">
-		<Path>C:\temp\Epsilon.mp3</Path>
-	</Track>
+
 
 </Tracks>
 
