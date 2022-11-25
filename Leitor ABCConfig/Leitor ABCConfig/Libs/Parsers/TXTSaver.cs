@@ -12,17 +12,32 @@ namespace Leitor_ABCConfig.Libs.Parsers
     {
         public void ToTXTFile(List<ImageDummyClass> idclasses)
         {
-            StreamWriter sw = new StreamWriter(@"C:\temp\Resultado.txt", true, Encoding.UTF8);
+            //    StreamWriter sw = new StreamWriter(@"C:\temp\Resultado.txt", true, Encoding.UTF8);
 
-            foreach (ImageDummyClass imageDummyClass in idclasses)
+            //    foreach (ImageDummyClass imageDummyClass in idclasses)
+            //    {
+            //        sw.WriteLine($"Name: {imageDummyClass.Name} // Width = {imageDummyClass.Width} // Height = {imageDummyClass.Height} // X = {imageDummyClass.X} // Y = {imageDummyClass.Y}");
+            //    }
+            //    sw.WriteLine("");
+            //    sw.Close();
+
+            try
             {
-                sw.WriteLine($"Name: {imageDummyClass.Name} // Width = {imageDummyClass.Width} // Height = {imageDummyClass.Height} // X = {imageDummyClass.X} // Y = {imageDummyClass.Y}");
+                using (StreamWriter sw = new StreamWriter(@"C:\temp\Resultado.txt", true, Encoding.UTF8))
+                {
+                    foreach (ImageDummyClass imageDummyClass in idclasses)
+                    {
+                        sw.WriteLine($"Name: {imageDummyClass.Name} // Width = {imageDummyClass.Width} // Height = {imageDummyClass.Height} // X = {imageDummyClass.X} // Y = {imageDummyClass.Y}");
+                    }
+                    sw.WriteLine("");
+                }
+
+                Console.WriteLine("Resultado.txt Gerado!!!");
+
+            }catch(Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
             }
-            sw.WriteLine("");
-            sw.Close();
-
-            Console.WriteLine("Resultado.txt Gerado!!!");
-
         }
     }
 }

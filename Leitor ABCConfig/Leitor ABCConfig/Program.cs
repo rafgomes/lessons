@@ -23,7 +23,11 @@ namespace Leitor_ABCConfig
             var creattxt = new TXTSaver();
             creattxt.ToTXTFile(classes.ImageDummyClass);
 
-                   
+            
+
+
+
+            
             Console.ReadLine();
         }
 
