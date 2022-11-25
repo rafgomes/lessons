@@ -23,8 +23,17 @@ namespace Leitor_ABCConfig
             var creattxt = new TXTSaver();
             creattxt.ToTXTFile(classes.ImageDummyClass);
 
-            
+            //criar um novo método na class IDCPrinter que chama PrintIDC( listaDeDummyClassees, name); 
+            //para imprimir apenas o Dummy que contem o valor do nome passado por parâmetro igual ao exemplo abaixo
 
+
+            //var imageDummy = (from item in classes.ImageDummyClass
+            //                  where item.Name == "ESC"
+            //                  select item).FirstOrDefault(); //se não existir retorna null 
+            //if(imageDummy != null)
+            //{
+            //    Console.WriteLine($"Name: {imageDummy.Name} X: {imageDummy.X} Y: {imageDummy.Y}")
+            //} 
 
 
             

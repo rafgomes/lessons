@@ -20,6 +20,10 @@ namespace Leitor_ABCConfig.Libs.Parsers
             //    }
             //    sw.WriteLine("");
             //    sw.Close();
+            //
+            // o jeito abaixo não precisa colocar um close(); pq o using() vai fechar a conexão para vocÊ
+            // geralmente quando fazemos leitura de arquivos, conexões com banco, tudo que é IO ( INPUT E OUTPUT EXTERNO)
+            // É Necessário colocar um using para fechar conexao. E sempre bom colocar try catch pq sempre pode ter erro de conexao
 
             try
             {
