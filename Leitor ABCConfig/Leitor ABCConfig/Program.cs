@@ -19,6 +19,10 @@ namespace Leitor_ABCConfig
 
             var printer = new IDCPrinter();
             printer.PrintIDC(classes.ImageDummyClass);
+
+            var creattxt = new TXTSaver();
+            creattxt.ToTXTFile(classes.ImageDummyClass);
+
                    
             Console.ReadLine();
         }

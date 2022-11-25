@@ -13,8 +13,9 @@ namespace Leitor_ABCConfig.Libs
         {
             foreach (ImageDummyClass imageDummyClass in idclasses)
             {
-                Console.WriteLine($"Name: {imageDummyClass.Name} // Width = {imageDummyClass.Width} // Height = {imageDummyClass.Height} // X = {imageDummyClass.X} // Y = {imageDummyClass.Y}");
+                 Console.WriteLine($"Name: {imageDummyClass.Name} // Width = {imageDummyClass.Width} // Height = {imageDummyClass.Height} // X = {imageDummyClass.X} // Y = {imageDummyClass.Y}");
             }
+            Console.WriteLine("===================================");
         }
     }
 }
