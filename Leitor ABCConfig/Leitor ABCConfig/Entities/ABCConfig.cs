@@ -24,7 +24,9 @@ namespace Leitor_ABCConfig.Entities
 
         [XmlArray("ImageDummyClasses")]
         [XmlArrayItem("ImageDummyClass")]
-        public List<ImageDummyClass> ImageDummyClass { get; set; }
+        public List<ImageDummyClass> ImageDummyClasses { get; set; }
+
+        public List<string> ListaNomes { get; set; }
     }
 
 }

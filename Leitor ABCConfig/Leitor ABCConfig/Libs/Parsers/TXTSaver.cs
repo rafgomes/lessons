@@ -10,38 +10,57 @@ namespace Leitor_ABCConfig.Libs.Parsers
 {
     public class TXTSaver
     {
-        public void ToTXTFile(List<ImageDummyClass> idclasses)
+        #region Old
+        //    try
+        //    {
+        //        using (StreamWriter sw = new StreamWriter(@"C:\temp\Resultado.txt", true, Encoding.UTF8))
+        //        {
+        //            foreach (ImageDummyClass imageDummyClass in idclasses)
+        //            {
+        //                sw.WriteLine($"Name: {imageDummyClass.Name} // Width = {imageDummyClass.Width} // Height = {imageDummyClass.Height} // X = {imageDummyClass.X} // Y = {imageDummyClass.Y}");
+        //            }
+        //            sw.WriteLine("");
+        //        }
+
+        //        //Console.WriteLine("Resultado.txt Gerado!!!");
+
+        //    }
+        //    catch(Exception ex)
+        //    {
+        //        Console.WriteLine(ex.ToString());
+        //    }
+        //}
+        #endregion
+
+        public void ToTXTFile(List<ImageDummyClass> lista, string name)
         {
-            //    StreamWriter sw = new StreamWriter(@"C:\temp\Resultado.txt", true, Encoding.UTF8);
-
-            //    foreach (ImageDummyClass imageDummyClass in idclasses)
-            //    {
-            //        sw.WriteLine($"Name: {imageDummyClass.Name} // Width = {imageDummyClass.Width} // Height = {imageDummyClass.Height} // X = {imageDummyClass.X} // Y = {imageDummyClass.Y}");
-            //    }
-            //    sw.WriteLine("");
-            //    sw.Close();
-            //
-            // o jeito abaixo não precisa colocar um close(); pq o using() vai fechar a conexão para vocÊ
-            // geralmente quando fazemos leitura de arquivos, conexões com banco, tudo que é IO ( INPUT E OUTPUT EXTERNO)
-            // É Necessário colocar um using para fechar conexao. E sempre bom colocar try catch pq sempre pode ter erro de conexao
-
             try
             {
                 using (StreamWriter sw = new StreamWriter(@"C:\temp\Resultado.txt", true, Encoding.UTF8))
                 {
-                    foreach (ImageDummyClass imageDummyClass in idclasses)
+                    var imageDummy = (from item in lista
+                                      where item.Name == name
+                                      select item).FirstOrDefault();
+
+                    if (imageDummy != null)
                     {
-                        sw.WriteLine($"Name: {imageDummyClass.Name} // Width = {imageDummyClass.Width} // Height = {imageDummyClass.Height} // X = {imageDummyClass.X} // Y = {imageDummyClass.Y}");
+                        sw.WriteLine($"Name: {imageDummy.Name} // Width = {imageDummy.Width} // Height = {imageDummy.Height} // X = {imageDummy.X} // Y = {imageDummy.Y}");
+                        sw.WriteLine(" ");
+                        Console.WriteLine("Arquivo TXT Gerado!");
                     }
-                    sw.WriteLine("");
+                    else
+                    {
+                        Console.WriteLine("Arquivo não foi gerado!");
+                    }
+
                 }
 
-                Console.WriteLine("Resultado.txt Gerado!!!");
-
-            }catch(Exception ex)
+            }
+            catch(Exception ex)
             {
                 Console.WriteLine(ex.ToString());
             }
+
         }
     }
 }
