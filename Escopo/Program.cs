@@ -10,6 +10,7 @@ namespace AulaEscopo //escopo do namespace
     {
 
         static int num10 = 10; //variavel pertecente a classe, é global, pode ser acessada por todos os escopos
+                               //toda variavel que pertence a uma classe, é propriedade da classe
         
         static void Main(string[] args)   //     Método MAIN
         {                                 //   Unica área possivel de acesso a variavel 'num' (é uma variável local)
@@ -21,6 +22,7 @@ namespace AulaEscopo //escopo do namespace
 
         void teste()
         {
+            
             int num = 0;                // A variavel pode ter o mesmo nome da variavel local de outro método
             Console.WriteLine(num);     // ela não pode ser acessada, pois num10 é uma variavel static, e o metodo tambem precisa ser static
         }
