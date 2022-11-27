@@ -16,8 +16,19 @@ namespace AulaEscopo //escopo do namespace
         {                                 //   Unica área possivel de acesso a variavel 'num' (é uma variável local)
             int num = 0;                  //   ela pertence apenas ao método MAIN   
                                           //  
-            Console.WriteLine(num10);     // 
-        }                                 //
+            //Console.WriteLine(num10);     // 
+            
+            Pessoas pessoa = new Pessoas();
+            //pessoa. //não consigo acessar nem metodos, nem propriedades da classe, pois nenhum são publics
+            Pessoas.SetPublicName("Camilo");
+            Pessoas pessoa2 = new Pessoas();
+            pessoa2.GetName();
+
+            string nomeRetornado = pessoa2.GetName();
+            Console.WriteLine(nomeRetornado);
+
+            Console.ReadLine();
+        }                                 
 
 
         void teste()
