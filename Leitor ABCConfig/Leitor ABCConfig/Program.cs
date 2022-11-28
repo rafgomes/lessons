@@ -10,6 +10,7 @@ using System.Net.Http.Headers;
 using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Leitor_ABCConfig
 {
@@ -17,19 +18,26 @@ namespace Leitor_ABCConfig
     {
         static void Main(string[] args)
         {
-            ABCConfigParser parser = new ABCConfigParser();
-            ABCConfig abcConfig = parser.GetABCConfig(@"C:\Projets\abcparaguay\src\config\ABCConfig.xml");
+            Form1 form1 = new Form1();
+            form1.ShowDialog();
 
-            Console.WriteLine("Write the Dummy Class:");
-            string pesquisa = Console.ReadLine();
 
-            var printer = new IDCPrinter();
-            printer.PrintIDC(abcConfig.ImageDummyClasses, pesquisa);
 
-            var creattxt = new TXTSaver();
-            creattxt.ToTXTFile(abcConfig.ImageDummyClasses, pesquisa);
+            #region Consulta Antiga
+            //ABCConfigParser parser = new ABCConfigParser();
+            //ABCConfig abcConfig = parser.GetABCConfig(@"C:\Projets\abcparaguay\src\config\ABCConfig.xml");
 
-            Console.ReadLine();
+            //Console.WriteLine("Write the Dummy Class:");
+            //string pesquisa = Console.ReadLine();
+
+            //var printer = new IDCPrinter();
+            //printer.PrintIDC(abcConfig.ImageDummyClasses, pesquisa);
+
+            //var creattxt = new TXTSaver();
+            //creattxt.ToTXTFile(abcConfig.ImageDummyClasses, pesquisa);
+
+            //Console.ReadLine();
+            #endregion
         }
 
     }

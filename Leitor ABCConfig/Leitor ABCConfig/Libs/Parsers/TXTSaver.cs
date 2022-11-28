@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using Leitor_ABCConfig.Entities;
+using System.Windows.Forms;
 
 namespace Leitor_ABCConfig.Libs.Parsers
 {
@@ -46,11 +47,13 @@ namespace Leitor_ABCConfig.Libs.Parsers
                     {
                         sw.WriteLine($"Name: {imageDummy.Name} // Width = {imageDummy.Width} // Height = {imageDummy.Height} // X = {imageDummy.X} // Y = {imageDummy.Y}");
                         sw.WriteLine(" ");
-                        Console.WriteLine("Arquivo TXT Gerado!");
+                        //Console.WriteLine("Arquivo TXT Gerado!");
+                        MessageBox.Show("Arquivo TXT Gerado!");
                     }
                     else
                     {
-                        Console.WriteLine("Arquivo não foi gerado!");
+                        //Console.WriteLine("Arquivo não foi gerado!");
+                        MessageBox.Show("Arquivo não foi gerado!");
                     }
 
                 }
