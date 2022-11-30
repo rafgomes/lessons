@@ -45,14 +45,11 @@
             // comboIDC
             // 
             this.comboIDC.FormattingEnabled = true;
-            this.comboIDC.Items.AddRange(new object[] {
-            "MEC",
-            "ESC",
-            "PSC30"});
             this.comboIDC.Location = new System.Drawing.Point(152, 12);
             this.comboIDC.Name = "comboIDC";
             this.comboIDC.Size = new System.Drawing.Size(121, 21);
             this.comboIDC.TabIndex = 0;
+            this.comboIDC.SelectedIndexChanged += new System.EventHandler(this.comboIDC_SelectedIndexChanged);
             // 
             // label1
             // 

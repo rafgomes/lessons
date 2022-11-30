@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -23,7 +24,14 @@ namespace Leitor_ABCConfig
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            comboIDC.Items.Add("teste");
+
+            ABCConfigParser parser = new ABCConfigParser();
+            ABCConfig abcConfig = parser.GetABCConfig(@"C:\Projets\abcparaguay\src\config\ABCConfig.xml");
+
+            ImageDummyClass dummyNames = abcConfig.ImageDummyClasses.First();
+
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -55,6 +63,13 @@ namespace Leitor_ABCConfig
 
             var creattxt = new TXTSaver();
             creattxt.ToTXTFile(abcConfig.ImageDummyClasses, pesquisa);
+        }
+
+        private void comboIDC_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+
+
         }
     }
 }

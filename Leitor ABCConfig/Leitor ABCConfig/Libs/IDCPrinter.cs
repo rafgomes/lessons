@@ -24,12 +24,12 @@ namespace Leitor_ABCConfig.Libs
 
         //}
         #endregion
+
         public string width;
         public string height;
         public string x;
         public string y;
 
-        #region Filtro
         public void PrintIDC(List<ImageDummyClass> lista, string name) //sobrecarga de metodos https://balta.io/blog/orientacao-a-objetos-sobrescrita-sobrecarga
         {
 
@@ -51,6 +51,6 @@ namespace Leitor_ABCConfig.Libs
                 MessageBox.Show("Image Dummy Class não encontrado!");
             }
         }
-        #endregion
+
     }
 }
