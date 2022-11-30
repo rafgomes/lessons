@@ -63,7 +63,7 @@
     </Compile>
     <Compile Include="Libs\IDCPrinterBase.cs" />
     <Compile Include="Libs\Parsers\ABCConfigParser.cs" />
-    <Compile Include="Libs\IDCPrinter.cs" />
+    <Compile Include="Libs\IDCSearch.cs" />
     <Compile Include="Libs\Parsers\TXTSaver.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

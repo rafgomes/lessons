@@ -17,6 +17,7 @@ namespace Leitor_ABCConfig
     public partial class Form1 : Form
     {
         public string pesquisa;
+        ABCConfig abcConfig;
         public Form1()
         {
             InitializeComponent();
@@ -24,14 +25,13 @@ namespace Leitor_ABCConfig
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            comboIDC.Items.Add("teste");
-
             ABCConfigParser parser = new ABCConfigParser();
-            ABCConfig abcConfig = parser.GetABCConfig(@"C:\Projets\abcparaguay\src\config\ABCConfig.xml");
+            this.abcConfig = parser.GetABCConfig(@"C:\Projets\Lessons\Leitor ABCConfig\ABCConfig.xml");
 
-            ImageDummyClass dummyNames = abcConfig.ImageDummyClasses.First();
-
-
+            foreach (ImageDummyClass item in abcConfig.ImageDummyClasses)
+            {
+                comboIDC.Items.Add(item.Name);
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -43,33 +43,40 @@ namespace Leitor_ABCConfig
         {
             pesquisa = comboIDC.Text;
 
-            ABCConfigParser parser = new ABCConfigParser();
-            ABCConfig abcConfig = parser.GetABCConfig(@"C:\Projets\abcparaguay\src\config\ABCConfig.xml");
+            IDCSearch search = new IDCSearch();
+            ImageDummyClass idcResult = search.GetImageDummyClass(this.abcConfig.ImageDummyClasses, pesquisa);
 
-            var printer = new IDCPrinter();
-            printer.PrintIDC(abcConfig.ImageDummyClasses, pesquisa);
-
-            txtWidth.Text = printer.width.ToString();
-            txtHeight.Text = printer.height.ToString();
-            txtX.Text = printer.x.ToString();
-            txtY.Text = printer.y.ToString();
-
+            if (idcResult != null)
+            {
+                txtWidth.Text = idcResult.Width.ToString();
+                txtHeight.Text = idcResult.Height.ToString();
+                txtX.Text = idcResult.X.ToString();
+                txtY.Text = idcResult.Y.ToString();
+            }
         }
 
         private void btnTXT_Click(object sender, EventArgs e)
         {
-            ABCConfigParser parser = new ABCConfigParser();
-            ABCConfig abcConfig = parser.GetABCConfig(@"C:\Projets\abcparaguay\src\config\ABCConfig.xml");
-
             var creattxt = new TXTSaver();
-            creattxt.ToTXTFile(abcConfig.ImageDummyClasses, pesquisa);
+            creattxt.ToTXTFile(this.abcConfig.ImageDummyClasses, pesquisa);
         }
 
         private void comboIDC_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //var objetoSelecionado = comboIDC.SelectedItem;
+            //string pesquisa = objetoSelecionado.ToString();
 
+            //IDCSearch search = new IDCSearch();
+            //ImageDummyClass idcResult = search.GetImageDummyClass(this.abcConfig.ImageDummyClasses, pesquisa);
 
+            //if (idcResult != null)
+            //{
+            //    txtWidth.Text = idcResult.Width.ToString();
+            //    txtHeight.Text = idcResult.Height.ToString();
+            //    txtX.Text = idcResult.X.ToString();
+            //    txtY.Text = idcResult.Y.ToString();
 
+            //}
         }
     }
 }

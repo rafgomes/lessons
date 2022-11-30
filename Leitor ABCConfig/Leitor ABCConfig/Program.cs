@@ -30,7 +30,7 @@ namespace Leitor_ABCConfig
             //Console.WriteLine("Write the Dummy Class:");
             //string pesquisa = Console.ReadLine();
 
-            //var printer = new IDCPrinter();
+            //var printer = new IDCSearch();
             //printer.PrintIDC(abcConfig.ImageDummyClasses, pesquisa);
 
             //var creattxt = new TXTSaver();
