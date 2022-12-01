@@ -8,9 +8,16 @@ namespace Matematica
 {
     public class Matematica
     {
-        public int Soma(int snum1, int snum2)
+        protected int Soma(int snum1, int snum2)
         {
-            return snum1 + snum2;
+            int resultSoma = snum1 + snum2;
+            return resultSoma;
+        }
+
+        protected int Soma(int snum1, int snum2, int multi)
+        {
+            int resultSoma = Soma(snum1, snum2);
+            return resultSoma * multi;
         }
 
         public int Sub(int subn1, int subn2)

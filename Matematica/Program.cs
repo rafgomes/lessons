@@ -19,8 +19,13 @@ namespace Matematica
             int b = int.Parse(Console.ReadLine());
 
             Console.WriteLine("");
+
+            OperacoesComplexas oc = new OperacoesComplexas();
+            int resultado = oc.Soma(a, b);
+
+            int resultado = matematica.
             
-            int resultSoma = matematica.Soma(a, b); //armazena o retorno da função 'Soma' na variavel 'resultSoma'
+            double resultSoma = oc.SomaMultiDiv(a, b, 10, 2); //armazena o retorno da função 'Soma' na variavel 'resultSoma'
             Console.WriteLine($"Soma: {resultSoma}");
             
             int resultSub = matematica.Sub(a, b);
