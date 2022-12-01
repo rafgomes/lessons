@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculadora", "Calculadora.csproj", "{0ADCE371-5532-42AA-BD82-EC035DD412E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matematica", "Matematica.csproj", "{CAD363BF-7970-4E1B-88A8-51E44E1A040E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0ADCE371-5532-42AA-BD82-EC035DD412E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0ADCE371-5532-42AA-BD82-EC035DD412E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0ADCE371-5532-42AA-BD82-EC035DD412E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0ADCE371-5532-42AA-BD82-EC035DD412E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAD363BF-7970-4E1B-88A8-51E44E1A040E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAD363BF-7970-4E1B-88A8-51E44E1A040E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAD363BF-7970-4E1B-88A8-51E44E1A040E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAD363BF-7970-4E1B-88A8-51E44E1A040E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {D672B2A5-4FE5-4688-9E6B-8E3A8AB53BE5}
+		SolutionGuid = {CAAF52C2-8847-42A9-867F-607D18268AE1}
 	EndGlobalSection
 EndGlobal

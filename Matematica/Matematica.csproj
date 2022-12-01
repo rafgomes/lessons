@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0ADCE371-5532-42AA-BD82-EC035DD412E2}</ProjectGuid>
+    <ProjectGuid>{CAD363BF-7970-4E1B-88A8-51E44E1A040E}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Matematica</RootNamespace>
     <AssemblyName>Matematica</AssemblyName>
@@ -43,9 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Matematica.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Matematica.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

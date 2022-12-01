@@ -4,28 +4,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calculos
+namespace Matematica
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Matematica matematica = new Matematica();
-            
-            Console.WriteLine("Digite o Primeiro Numero: ");
-            int a = int.Parse(Console.ReadLine());
-            matematica.num1 = a;
+            Matematica matematica = new Matematica(); //cria objeto 'matematica' do tipo 'Matematica'
 
-            Console.WriteLine("Digite o Segundo Numero: ");
+            Console.WriteLine("Primeiro Numero:");
+            int a = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Segundo Valor:");
             int b = int.Parse(Console.ReadLine());
-            matematica.num2 = b;
 
             Console.WriteLine("");
-            Console.WriteLine($"Soma: {matematica.Soma()}");
-            Console.WriteLine($"Subtração: {matematica.Sub()}");
-            Console.WriteLine($"Multiplicação: {matematica.Mult()}");
-            Console.WriteLine($"Divisão: {matematica.Div()}");
+            
+            int resultSoma = matematica.Soma(a, b); //armazena o retorno da função 'Soma' na variavel 'resultSoma'
+            Console.WriteLine($"Soma: {resultSoma}");
+            
+            int resultSub = matematica.Sub(a, b);
+            Console.WriteLine($"Subtração: {resultSub}");
 
+            int resultMulti = matematica.Mult(a, b);
+            Console.WriteLine($"Multiplicação: {resultMulti}");
+
+            double resultDiv = matematica.Div(a, b);
+            Console.WriteLine($"Divisão: {resultDiv}");
 
 
             Console.ReadLine();
