@@ -11,6 +11,8 @@ namespace MyApp // Note: actual namespace depends on the project name.
         public string Name { get; set; }
         public int X { get; set; }
         public int Y { get; set; }
+
+        public override string ToString() { return $"{Name} - {X} {Y}"; }
     }
 
 
@@ -93,15 +95,23 @@ namespace MyApp // Note: actual namespace depends on the project name.
             listaDeObjectos.Add(obj1);
             listaDeObjectos.Add("teste");
             listaDeObjectos.Add(1324);
+            listaDeObjectos.Add(new DummyClass()
+            {
+                Name = "Um Valor",
+                Y = 1,
+                X = 2
 
+            });
 
-            foreach(var item in listaDeObjectos)
+            string retorno = obj1.ToString();
+
+            foreach(object item in listaDeObjectos)
             {
 
                 Console.WriteLine(item);
-
+                
             }
-
+            Console.ReadLine();
 
 
 
