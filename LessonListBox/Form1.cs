@@ -22,7 +22,7 @@ namespace LessonListBox
 
         public void Form1_Load(object sender, EventArgs e)
         {
-            
+            btnRemove.Enabled = false;
         }
 
         public void btnAdd_Click(object sender, EventArgs e)
@@ -39,14 +39,60 @@ namespace LessonListBox
                 lbNames.DataSource = null;
                 lbNames.DataSource = listaDeNames;
             }
-          
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
-            listaDeNames.RemoveAt(lbNames.SelectedIndex);
-            lbNames.DataSource = null;
-            lbNames.DataSource = listaDeNames;
+            if(lbNames.SelectedIndex > -1)
+            {
+                listaDeNames.RemoveAt(lbNames.SelectedIndex);
+                lbNames.DataSource = null;
+                lbNames.DataSource = listaDeNames;
+            }
+            else
+            {
+                MessageBox.Show("Selecione um Nome!");
+            }
+        }
+
+        private void lbNames_ControlAdded(object sender, ControlEventArgs e)
+        {
+
+        }
+
+        private void lbNames_ControlRemoved(object sender, ControlEventArgs e)
+        {
+
+        }
+
+        private void lbNames_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(lbNames.SelectedIndex == -1) { 
+                btnRemove.Enabled = false;
+            }
+            else
+            {
+                btnRemove.Enabled = true;   
+            }
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            string textBoxName = tbName.Text;
+
+            if (textBoxName == "")
+            {
+                lbNames.DataSource = null;
+                lbNames.DataSource = listaDeNames;
+            }
+            else
+            {
+                List<string> armazenaResultado = new List<string>();
+                armazenaResultado = (from item in listaDeNames where item.StartsWith(textBoxName) select item).ToList();
+
+                lbNames.DataSource = null;
+                lbNames.DataSource = armazenaResultado;
+            }
         }
     }
 }

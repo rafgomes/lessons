@@ -32,6 +32,7 @@
             this.lbNames = new System.Windows.Forms.ListBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tbName
@@ -48,6 +49,9 @@
             this.lbNames.Name = "lbNames";
             this.lbNames.Size = new System.Drawing.Size(179, 277);
             this.lbNames.TabIndex = 1;
+            this.lbNames.SelectedIndexChanged += new System.EventHandler(this.lbNames_SelectedIndexChanged);
+            this.lbNames.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.lbNames_ControlAdded);
+            this.lbNames.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.lbNames_ControlRemoved);
             // 
             // btnAdd
             // 
@@ -69,11 +73,22 @@
             this.btnRemove.UseVisualStyleBackColor = true;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(278, 55);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 4;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(377, 365);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lbNames);
@@ -92,6 +107,7 @@
         private System.Windows.Forms.ListBox lbNames;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnRemove;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }
 
