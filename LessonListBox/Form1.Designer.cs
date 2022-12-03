@@ -41,6 +41,7 @@
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(179, 20);
             this.tbName.TabIndex = 0;
+            this.tbName.TextChanged += new System.EventHandler(this.tbName_TextChanged);
             // 
             // lbNames
             // 
