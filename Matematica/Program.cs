@@ -4,28 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calculos
+namespace Matematica
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Matematica matematica = new Matematica(); //correto
+            Matematica matematica = new Matematica(); //cria objeto 'matematica' do tipo 'Matematica'
 
-            //Matematica.Soma(1, 3); //nao funciona pq o metodo nao é static  compartilhado com os objtos
-           // var console = new Console(); //nao deixa criar instancia pq eh um classe static
+            Console.WriteLine("Primeiro Numero:");
+            int a = int.Parse(Console.ReadLine());
 
-
-            Console.WriteLine("Digite o Primeiro Numero: "); //correto
-
-           // string retornoString = Console.ReadLine(); //armazena o retorno do método ReadLine, nao precisou criar um objeto de Console pq o metodo ReadLine é static
-
-            int a = int.Parse(Console.ReadLine()); // variavel a armazena o RETORNO do método 
-            matematica.num1 = a;
-
-            Console.WriteLine("Digite o Segundo Numero: ");
+            Console.WriteLine("Segundo Valor:");
             int b = int.Parse(Console.ReadLine());
-            matematica.num2 = b;
 
             matematica.Teste = "Valor original";
 
@@ -36,11 +27,23 @@ namespace Calculos
             //armazena o resultado da divisao e salva aqui
 
             Console.WriteLine("");
-            Console.WriteLine($"Soma: {resultadoDaSoma}");
-            Console.WriteLine($"Subtração: {matematica.Sub()}");
-            Console.WriteLine($"Multiplicação: {matematica.Mult()}");
-            Console.WriteLine($"Divisão: {matematica.Div()}");
 
+            OperacoesComplexas oc = new OperacoesComplexas();
+            int resultado = oc.Soma(a, b);
+
+            int resultado = matematica.
+            
+            double resultSoma = oc.SomaMultiDiv(a, b, 10, 2); //armazena o retorno da função 'Soma' na variavel 'resultSoma'
+            Console.WriteLine($"Soma: {resultSoma}");
+            
+            int resultSub = matematica.Sub(a, b);
+            Console.WriteLine($"Subtração: {resultSub}");
+
+            int resultMulti = matematica.Mult(a, b);
+            Console.WriteLine($"Multiplicação: {resultMulti}");
+
+            double resultDiv = matematica.Div(a, b);
+            Console.WriteLine($"Divisão: {resultDiv}");
 
 
             Console.ReadLine();

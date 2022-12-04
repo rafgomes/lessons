@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // As informações gerais sobre um assembly são controladas por
 // conjunto de atributos. Altere estes valores de atributo para modificar as informações
 // associadas a um assembly.
-[assembly: AssemblyTitle("Matematica")]
+[assembly: AssemblyTitle("LessonListBox")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("Matematica")]
+[assembly: AssemblyProduct("LessonListBox")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // O GUID a seguir será destinado à ID de typelib se este projeto for exposto para COM
-[assembly: Guid("cad363bf-7970-4e1b-88a8-51e44e1a040e")]
+[assembly: Guid("ad7c039c-4c1f-4632-98ff-6faa33ab2c26")]
 
 // As informações da versão de um assembly consistem nos quatro valores a seguir:
 //

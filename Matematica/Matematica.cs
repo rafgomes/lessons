@@ -4,20 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Calculos
+namespace Matematica
 {
     public class Matematica
     {
-        public int num1;
-        public int num2;
-        public int result;
-        public double resultDiv;
-        public String Teste;
-        
-        public int Soma()
+        protected int Soma(int snum1, int snum2)
         {
-            result = num1 + num2;
-            return result;
+            int resultSoma = snum1 + snum2;
+            return resultSoma;
         }
         public int Soma(int paramtero1, int paramtero2)
         {
@@ -32,34 +26,33 @@ namespace Calculos
             return result;
         }
 
-        public int Sub()
+        protected int Soma(int snum1, int snum2, int multi)
         {
-            result = num1 - num2;
-            return result;
+            int resultSoma = Soma(snum1, snum2);
+            return resultSoma * multi;
         }
 
-        public int Mult()
+        public int Sub(int subn1, int subn2)
         {
-            result = num1 * num2;
-            return result;
+            return subn1 - subn2;
         }
 
-        public double Div()
+        public int Mult(int multn1, int multn2)
         {
-            if(num1 == 0 || num2 == 0)
-            {
+            return multn1 * multn2;
+        }
+
+        public double Div(double divn1, double divn2)
+        {
+           if(divn1== 0 || divn2 == 0) 
+           {
                 return 0;
-            }
+           }
             else
             {
-                resultDiv = (double)num1 / (double)num2;
-                return resultDiv;
+                return divn1 / divn2;
             }
+            
         }
-
-
-
-
-
     }
 }

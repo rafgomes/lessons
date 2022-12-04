@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matematica", "Matematica.csproj", "{CAD363BF-7970-4E1B-88A8-51E44E1A040E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LessonListBox", "LessonListBox.csproj", "{AD7C039C-4C1F-4632-98FF-6FAA33AB2C26}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CAD363BF-7970-4E1B-88A8-51E44E1A040E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CAD363BF-7970-4E1B-88A8-51E44E1A040E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CAD363BF-7970-4E1B-88A8-51E44E1A040E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CAD363BF-7970-4E1B-88A8-51E44E1A040E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD7C039C-4C1F-4632-98FF-6FAA33AB2C26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD7C039C-4C1F-4632-98FF-6FAA33AB2C26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD7C039C-4C1F-4632-98FF-6FAA33AB2C26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD7C039C-4C1F-4632-98FF-6FAA33AB2C26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {CAAF52C2-8847-42A9-867F-607D18268AE1}
+		SolutionGuid = {578AAD78-0D7D-452B-B281-12367F20B75F}
 	EndGlobalSection
 EndGlobal
