@@ -31,7 +31,7 @@ namespace Matematica
             OperacoesComplexas oc = new OperacoesComplexas();
             int resultado = oc.Soma(a, b);
 
-            int resultado = matematica.
+            //int resultado = matematica.
             
             double resultSoma = oc.SomaMultiDiv(a, b, 10, 2); //armazena o retorno da função 'Soma' na variavel 'resultSoma'
             Console.WriteLine($"Soma: {resultSoma}");
