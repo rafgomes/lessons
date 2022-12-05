@@ -19,7 +19,7 @@ namespace INPerformanceTest.Entity
         public int s_authorRef { get; set; }
         public string s_notes { get; set; }
         public short s_INArticleType { get; set; }
-        public short s_INArticleStatus { get; set; }
+        public string s_INArticleStatus { get; set; }
         public int s_INColumnSize { get; set; }
         public short s_INRejected { get; set; }
         public short s_INAutoPaginated { get; set; }  
@@ -27,7 +27,7 @@ namespace INPerformanceTest.Entity
         public int s_INCategory { get; set; }
         public string s_INSortBy { get; set; }
         public int s_INColumnSizeName { get; set; }
-        public short s_INArticleSubType { get; set; }
+        public string s_INArticleSubType { get; set; }
         public int s_INMateriaSeq { get; set; }
         public int s_INAssignedUserRef { get; set; }
         public string s_INMateriaType { get; set; }
