@@ -43,6 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AprendendoMais\CmdManager.cs" />
+    <Compile Include="AprendendoMais\Commandos\CopyFilesCmd.cs" />
+    <Compile Include="AprendendoMais\Commandos\DeleteArquivosCmd.cs" />
+    <Compile Include="AprendendoMais\Commandos\MoveArquivoCmd.cs" />
+    <Compile Include="AprendendoMais\Commandos\SendEmailFilesCmd.cs" />
+    <Compile Include="AprendendoMais\Exceptions\CmdExceptions.cs" />
+    <Compile Include="AprendendoMais\Interfaces\ICommandos.cs" />
     <Compile Include="IRegistra.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
