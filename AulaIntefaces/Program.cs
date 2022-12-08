@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AulaIntefaces.AprendendoMais;
+using AulaIntefaces.AprendendoMais.Commandos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,11 +18,25 @@ namespace AulaIntefaces
             //reg.RegistraNoDisco(@"C:\temp\log.txt", "Este registro foi salvo no disco!");
             #endregion
 
-            RegistraOcorrencia regConsole = new RegistraOcorrencia(new RegistraConsole());
-            regConsole.Registrar("Mensagem No Console!");
+            var cmdManager = new CmdManager();
+            cmdManager.AddCmd( new MoveArquivoCmd(@"c:\temp2\") );
+            cmdManager.AddCmd(new MoveArquivoCmd(@"c:\temp\"));
+            cmdManager.AddCmd(new SendEmailFilesCmd());
+            cmdManager.AddCmd(new CopyFilesCmd(@"C:\temp"));
+            cmdManager.AddCmd(new DeleteArquivosCmd(@"C:\temp"));
 
-            RegistraOcorrencia regDisco = new RegistraOcorrencia(new RegistraNoDisco(@"C:\temp\log.txt"));
-            regDisco.Registrar("Mensagem No Disco!!");
+
+            cmdManager.ExecuteCmd();
+
+
+
+
+
+            //RegistraOcorrencia regConsole = new RegistraOcorrencia(new RegistraConsole());
+            //regConsole.Registrar("Mensagem No Console!");
+
+            //RegistraOcorrencia regDisco = new RegistraOcorrencia(new RegistraNoDisco(@"C:\temp\log.txt"));
+            //regDisco.Registrar("Mensagem No Disco!!");
 
 
             Console.ReadKey();
