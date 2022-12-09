@@ -1,12 +1,12 @@
-﻿using FuncoesRecursivas.Classes;
-using FuncoesRecursivas.Funcoes;
+﻿using Aula14.Classes;
+using Aula14.Funcoes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FuncoesRecursivas.Diretorio
+namespace Aula14.Diretorio
 {
     public class Menu
     {
@@ -37,7 +37,8 @@ namespace FuncoesRecursivas.Diretorio
                 }
                 else if (valor == CADASTRAR_CLIENTES)
                 {
-                    ClassCadastrarClientes.CadastrarClientes();
+                    ClassCadastrarClientes cc = new ClassCadastrarClientes();
+                    cc.CadastrarClientes();
                 }
                 else
                 {

@@ -1,6 +1,6 @@
-﻿using FuncoesRecursivas.Classes;
-using FuncoesRecursivas.Diretorio;
-using FuncoesRecursivas.Funcoes;
+﻿using Aula13.Classes;
+using Aula13.Diretorio;
+using Aula13.Funcoes;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -9,7 +9,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FuncoesRecursivas
+namespace Aula13
 {
     internal class Program
     {

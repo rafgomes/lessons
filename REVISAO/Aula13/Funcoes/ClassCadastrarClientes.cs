@@ -1,4 +1,4 @@
-﻿using FuncoesRecursivas.Classes;
+﻿using Aula13.Classes;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FuncoesRecursivas.Funcoes
+namespace Aula13.Funcoes
 {
     public class ClassCadastrarClientes
     {
@@ -22,7 +22,8 @@ namespace FuncoesRecursivas.Funcoes
             Console.WriteLine("Digite o CPF:");
             clientes.CPF = Console.ReadLine();
 
-            Cliente.Gravar();
+            ClassCadastrarClientes cc = new ClassCadastrarClientes();
+            cc.CadastrarClientes();
         }
     }
 }

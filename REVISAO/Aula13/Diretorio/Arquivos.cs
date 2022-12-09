@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 
-namespace FuncoesRecursivas.Diretorio
+namespace Aula13.Diretorio
 {
     class Arquivos
     {

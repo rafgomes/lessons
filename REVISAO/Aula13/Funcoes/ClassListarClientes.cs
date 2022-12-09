@@ -1,11 +1,11 @@
-﻿using FuncoesRecursivas.Classes;
+﻿using Aula13.Classes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FuncoesRecursivas.Funcoes
+namespace Aula13.Funcoes
 {
     public class ClassListarClientes
     {

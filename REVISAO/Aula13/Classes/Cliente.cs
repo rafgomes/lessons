@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FuncoesRecursivas.Classes
+namespace Aula13.Classes
 {
     public class Cliente
     {
@@ -55,10 +55,10 @@ namespace FuncoesRecursivas.Classes
 
         #region Gravar 2
         
-        public static void Gravar()  //outra maneira de gravar
+        public void Gravar()  //outra maneira de gravar
         {
             var clientes = Cliente.LerClientes();
-            clientes.Add(this);
+            clientes.Add(this); //Camilo, pq o this não funciona em uma classe estatica? 
             if (File.Exists(CaminhoBaseClientes()))
             {
                 StreamWriter r = new StreamWriter(CaminhoBaseClientes());
