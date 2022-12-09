@@ -1,6 +1,6 @@
-﻿using Aula14.Classes;
-using Aula14.Diretorio;
-using Aula14.Funcoes;
+﻿using Aula15.Classes;
+using Aula15.Diretorio;
+using Aula15.Funcoes;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -9,9 +9,9 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Aula14
+namespace Aula15
 {
-    internal class Program 
+    internal class Program //Corrigindo a aula 14 com Polimorfismo
     {
         static void Main(string[] args)
         {
