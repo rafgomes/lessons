@@ -1,13 +1,11 @@
 ﻿using Aula17.Classes;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Aula17Interface
+namespace Aula17
 {
     internal class Program //Corrigindo a aula 14 com Polimorfismo
     {
@@ -32,5 +30,4 @@ namespace Aula17Interface
 
 
     }
-
 }

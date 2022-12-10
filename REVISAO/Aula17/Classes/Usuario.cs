@@ -1,13 +1,10 @@
-﻿using Aula17.Classes;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Aula16Interface.Classes
+namespace Aula17.Classes
 {
     public class Usuario : Base
     {
@@ -18,7 +15,4 @@ namespace Aula16Interface.Classes
             this.CPF = cpf;
         }
     }
-
-
-
- }
+}

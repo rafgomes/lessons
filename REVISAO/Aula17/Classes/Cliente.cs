@@ -1,24 +1,21 @@
-﻿using Aula17.Classes;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Aula16Interface.Classes
+namespace Aula17.Classes
 {
-    public class Usuario : Base
+    public class Cliente : Base
     {
-        public Usuario(string nome, string telefone, string cpf)
+        public Cliente(string nome, string telefone, string cpf)
         {
             this.Nome = nome;
             this.Telefone = telefone;
             this.CPF = cpf;
         }
+
+        public Cliente() { }
+
     }
-
-
-
- }
+}

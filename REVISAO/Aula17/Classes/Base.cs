@@ -1,12 +1,12 @@
-﻿using System;
+﻿using Aula17.Classes;
+using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Aula17.Classes
+namespace Aula17
 {
     public class Base : IPessoa
     {
@@ -27,16 +27,16 @@ namespace Aula17.Classes
         {
             var dados = this.Ler();
             dados.Add(this);
-            
-                StreamWriter r = new StreamWriter(DiretorioComArquivo());
-                r.WriteLine("nome;telefone;cpf;");
-                foreach (Base b in dados)
-                {
-                    var linha = b.Nome + ";" + b.Telefone + ";" + b.CPF + ";";
-                    r.WriteLine(linha);
-                }
-                r.Close();
-            
+
+            StreamWriter r = new StreamWriter(DiretorioComArquivo());
+            r.WriteLine("nome;telefone;cpf;");
+            foreach (Base b in dados)
+            {
+                var linha = b.Nome + ";" + b.Telefone + ";" + b.CPF + ";";
+                r.WriteLine(linha);
+            }
+            r.Close();
+
         }
 
         public List<Base> Ler()
