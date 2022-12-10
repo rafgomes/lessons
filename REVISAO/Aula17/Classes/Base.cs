@@ -28,7 +28,7 @@ namespace Aula17
         public void SetTelefone(string telefone) { this.Telefone= telefone; }
         public void SetCPF(string cpf) { this.CPF = cpf; }
 
-        public void Gravar() //virtual é um metodo que pode ser sobrescrito //para nunca deixar sobrescrever tem que ser seled
+        public void Gravar()
         {
             var dados = this.Ler();
             dados.Add(this);
