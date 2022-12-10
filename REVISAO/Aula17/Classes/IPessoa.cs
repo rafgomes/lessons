@@ -8,6 +8,9 @@ namespace Aula17.Classes
 {
     public interface IPessoa
     {
+        void SetNome(string nome);
+        void SetTelefone(string telefone);
+        void SetCPF(string cpf);
 
     }
 }

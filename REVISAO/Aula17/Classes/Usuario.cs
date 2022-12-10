@@ -14,5 +14,7 @@ namespace Aula17.Classes
             this.Telefone = telefone;
             this.CPF = cpf;
         }
+
+        public Usuario() { }
     }
 }

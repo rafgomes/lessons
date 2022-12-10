@@ -1,6 +1,7 @@
 ﻿using Aula17.Classes;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,10 @@ namespace Aula17
         public string Telefone { get; set; }
         public string CPF { get; set; }
 
+        public void SetNome(string nome) { this.Nome = nome; }
+        public void SetTelefone(string telefone) { this.Telefone= telefone; }
+        public void SetCPF(string cpf) { this.CPF = cpf; }
+
         public void Gravar() //virtual é um metodo que pode ser sobrescrito //para nunca deixar sobrescrever tem que ser seled
         {
             var dados = this.Ler();
@@ -39,9 +44,9 @@ namespace Aula17
 
         }
 
-        public List<Base> Ler()
+        public List<IPessoa> Ler()
         {
-            var dados = new List<Base>();
+            var dados = new List<IPessoa>();
             if (File.Exists(DiretorioComArquivo()))
             {
                 using (StreamReader arquivo = File.OpenText(DiretorioComArquivo()))
@@ -55,8 +60,11 @@ namespace Aula17
                         if (i == 1) continue;
                         var baseArquivo = linha.Split(';');
 
-                        var dadosBase = new Base(baseArquivo[0], baseArquivo[1], baseArquivo[2]);
-                        dados.Add(dadosBase);
+                        var b = (IPessoa)Activator.CreateInstance(this.GetType());
+                        b.SetNome(baseArquivo[0]);
+                        b.SetTelefone(baseArquivo[1]);
+                        b.SetCPF(baseArquivo[2]);
+                        dados.Add(b);
                     }
                 }
             }
