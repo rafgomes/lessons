@@ -8,12 +8,21 @@ namespace Relatorios.Clientes
 {
     public class Gorilla : IRelatorio
     {
-        public Gorilla(string nome, string idade, string telefone, string endereco)
+        public Gorilla()
         {
-            nome = "Quintal Do Gorilla";
-            idade = "2";
-            telefone = "1638390000";
-            endereco = "Av Portugal";
+         
+        }
+
+        public string Nome { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        public string GetRelatorio()
+        {
+            //var result = GetDBRelatio("select nome,idade,telfone, endereco");
+
+            return "camilo, 123,telfone, rua xaraeis";
+
+
+            
         }
     }
 }

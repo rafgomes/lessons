@@ -8,20 +8,22 @@ using System.Threading.Tasks;
 
 namespace Relatorios.Dados
 {
-    public class ExportaRelatorio : IRelatorio
+    public class ExportaRelatorio
     {
-        private readonly IRelatorio getRelatorio;
+        private readonly IRelatorio relatorio;
 
-        public ExportaRelatorio(IRelatorio getRelatorio)
+        public ExportaRelatorio(IRelatorio relatorio)
         {
-            this.getRelatorio = getRelatorio;
+            this.relatorio = relatorio;
         }
 
-        public void ExportaTXT(string empresa)
+        public void ExportaTXT()
         {
-            string resultTXT = getRelatorio.GetRelatorio(empresa);
+            string resultTXT = relatorio.GetRelatorio();
 
-            File.WriteAllText($@"C:\Projets\Lessons\Camilo\Relatorios\DB{empresa}_Relatorio.txt", resultTXT);
+            Console.WriteLine(resultTXT);
+
+           // File.WriteAllText($@"C:\Projets\Lessons\Camilo\Relatorios\DB{relatorio.Nome}_Relatorio.txt", resultTXT);
 
         }
     }

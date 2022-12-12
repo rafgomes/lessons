@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Relatorios.Clientes
 {
-    public class StaMaria : IRelatorio
+    class GSI : IRelatorio
     {
         public string Nome { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
