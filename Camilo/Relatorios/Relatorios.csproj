@@ -46,6 +46,7 @@
     <Compile Include="Clientes\Cedetec.cs" />
     <Compile Include="Clientes\Gorilla.cs" />
     <Compile Include="Clientes\GSI.cs" />
+    <Compile Include="Dados\ExportRelatorios.cs" />
     <Compile Include="Factories\RelatorioFactory.cs" />
     <Compile Include="Repositories\DbRepository.cs" />
     <Compile Include="Repositories\FileRepository.cs" />

@@ -20,10 +20,24 @@ namespace Relatorios
                 tipo = args[1];
             }
 
-            IRelatorio relatorio = RelatorioFactory.CreateGetRelatorio(client, tipo);
+            var relatorios = RelatorioFactory.CreateRelatorios(tipo);
+            var exportRelatorios = new ExportRelatorios();
+            exportRelatorios.ExportarRelatorios(relatorios);
 
-            var exportRelatorio = new ExportaRelatorio(relatorio);
-            exportRelatorio.ExportaTXT();
+
+
+
+            //IRelatorio relatorio = RelatorioFactory.CreateGetRelatorio("Goroliza", tipo);
+
+            //var exportRelatorio = new ExportaRelatorio(relatorio);
+            //exportRelatorio.ExportaTXT();
+
+            //IRelatorio relatorio1 = RelatorioFactory.CreateGetRelatorio("Cedetec", tipo);
+
+            //var exportRelatorio2 = new ExportaRelatorio(relatorio);
+            //exportRelatorio.ExportaTXT();
+
+
 
         }
     }

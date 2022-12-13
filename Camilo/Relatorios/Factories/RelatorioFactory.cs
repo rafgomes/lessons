@@ -10,7 +10,19 @@ namespace Relatorios.Dados
 {
     public class RelatorioFactory
     {
-        public static IRelatorio CreateGetRelatorio(string empresa, string tipo )
+        public static List<IRelatorio> CreateRelatorios(string tipo)
+        {
+            string[] names = new string[] { "StaMaria", "Cedetec", "Gorrila", "GSI" };
+            List<IRelatorio> relatorios = new List<IRelatorio>();
+            foreach (string name in names)
+            {
+                var relatorio = CreateRelatorio(name, tipo);
+                relatorios.Add(relatorio);
+            }
+            return relatorios;
+        }
+
+        public static IRelatorio CreateRelatorio(string empresa, string tipo)
         {
             IRepositorio repository = RepositoryFactory.CreateRepository(tipo);
 
@@ -19,14 +31,15 @@ namespace Relatorios.Dados
                 IRelatorio getRelatorio = new StaMaria();
                 return getRelatorio;
             }
-            
+
             if (empresa == "Cedetec")
             {
-                IRelatorio getRelatorio = new Cedetec(repository);
+                IRepositorio fileRepository = new FileRepository();
+                IRelatorio getRelatorio = new Cedetec(fileRepository);
                 return getRelatorio;
             }
-            
-            if(empresa == "Gorrila")
+
+            if (empresa == "Gorrila")
             {
                 IRelatorio getRelatorio = new StaMaria();
                 return getRelatorio;
