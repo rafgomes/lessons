@@ -25,6 +25,8 @@ namespace Relatorios
             var exportRelatorio = new ExportaRelatorio(relatorio);
             exportRelatorio.ExportaTXT();
 
+            
+
         }
     }
 }

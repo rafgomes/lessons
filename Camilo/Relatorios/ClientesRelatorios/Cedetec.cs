@@ -1,4 +1,5 @@
-﻿using Relatorios.Dados;
+﻿using Relatorios.ClientesRelatorios;
+using Relatorios.Dados;
 using Relatorios.Repositories;
 using System;
 using System.Collections.Generic;
@@ -8,17 +9,18 @@ using System.Threading.Tasks;
 
 namespace Relatorios.Clientes
 {
-    public class Cedetec : IRelatorio
+    public class Cedetec : Relatorio
     {
-        private readonly IRepositorio repository;    
+        private readonly IRepositorio repository;   
 
         public Cedetec(IRepositorio repository) {
             this.repository = repository;
+            base.Nome = "Cedetec";
         }
 
-        public string Nome { get; set; } = "Cedetec";
+        //public string Nome { get; set; } = "Cedetec";
 
-        public string GetRelatorio()
+        public string GetRelatorio2()
         {
            
             var clients = repository.GetClients(Nome);

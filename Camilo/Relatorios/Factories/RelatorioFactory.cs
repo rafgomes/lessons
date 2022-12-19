@@ -1,4 +1,5 @@
 ﻿using Relatorios.Clientes;
+using Relatorios.ClientesRelatorios;
 using Relatorios.Repositories;
 using System;
 using System.Collections.Generic;
@@ -10,33 +11,33 @@ namespace Relatorios.Dados
 {
     public class RelatorioFactory
     {
-        public static IRelatorio CreateGetRelatorio(string empresa, string tipo )
+        public static Relatorio CreateGetRelatorio(string empresa, string tipo )
         {
             IRepositorio repository = RepositoryFactory.CreateRepository(tipo);
 
-            if (empresa == "StaMaria")
-            {
-                IRelatorio getRelatorio = new StaMaria();
-                return getRelatorio;
-            }
+            //if (empresa == "StaMaria")
+            //{
+            //    Relatorio getRelatorio = new StaMaria(repository);
+            //    return getRelatorio;
+            //}
             
             if (empresa == "Cedetec")
             {
-                IRelatorio getRelatorio = new Cedetec(repository);
+                Relatorio getRelatorio = new Cedetec(repository);
                 return getRelatorio;
             }
             
-            if(empresa == "Gorrila")
-            {
-                IRelatorio getRelatorio = new StaMaria();
-                return getRelatorio;
-            }
+            //if(empresa == "Gorilla")
+            //{
+            //    Relatorio getRelatorio = new Gorilla(repository);
+            //    return getRelatorio;
+            //}
 
-            if (empresa == "GSI")
-            {
-                IRelatorio getRelatorio = new GSI();
-                return getRelatorio;
-            }
+            //if (empresa == "GSI")
+            //{
+            //    Relatorio getRelatorio = new GSI(repository);
+            //    return getRelatorio;
+            //}
 
             return new Cedetec(repository);
 

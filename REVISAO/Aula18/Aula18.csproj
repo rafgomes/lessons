@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8A4AD6EE-3696-4C3A-9996-974D534FCA7A}</ProjectGuid>
+    <ProjectGuid>{80915C26-DECD-409D-8D93-F700C6537ED6}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Relatorios</RootNamespace>
-    <AssemblyName>Relatorios</AssemblyName>
+    <RootNamespace>Aula18</RootNamespace>
+    <AssemblyName>Aula18</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,22 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClientesRelatorios\Cedetec.cs" />
-    <Compile Include="ClientesRelatorios\Gorilla.cs" />
-    <Compile Include="ClientesRelatorios\GSI.cs" />
-    <Compile Include="ClientesRelatorios\Relatorio.cs" />
-    <Compile Include="Factories\RelatorioFactory.cs" />
-    <Compile Include="Repositories\DbRepository.cs" />
-    <Compile Include="Repositories\FileRepository.cs" />
-    <Compile Include="Repositories\MemoryRepositorio.cs" />
-    <Compile Include="Dados\ExportaRelatorio.cs" />
-    <Compile Include="Factories\RepositoryFactory.cs" />
-    <Compile Include="Dados\IRelatorio.cs" />
-    <Compile Include="ClientesRelatorios\StaMaria.cs" />
-    <Compile Include="Entity\Cliente.cs" />
+    <Compile Include="Animal.cs" />
+    <Compile Include="Cachorro.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\IRepositorio.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
