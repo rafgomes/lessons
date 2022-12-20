@@ -73,15 +73,15 @@ namespace MyClassesTest
         //[Priority(0)] //prioridade da execução
         //[TestCategory("Exception")] //categoria
         
-        public void FileNameDoesExists()
+        public void FileNameDoesExist()
         {
             FileProcess fp = new FileProcess();
             bool fromCall;
 
             TestContext.WriteLine($"Testing File: {_GoodFileName}");
-            fromCall = fp.FileExists(_GoodFileName); //irá verificar se o arquivo existe
+            Assert.ThrowsException<ArgumentNullException>( ()=> fp.FileExists(_GoodFileName)); //irá verificar se o arquivo existe
 
-            Assert.IsTrue(fromCall); //verifica se fromCall retornou true
+            
             //Assert.Inconclusive(); //Validação para saber se realmente a função está funcionando
         }
 
