@@ -43,10 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <Compile Include="ClientesRelatorios\Cedetec.cs" />
+    <Compile Include="ClientesRelatorios\Gorilla.cs" />
+    <Compile Include="ClientesRelatorios\GSI.cs" />
+    <Compile Include="ClientesRelatorios\Relatorio.cs" />
+=======
     <Compile Include="Clientes\Cedetec.cs" />
     <Compile Include="Clientes\Gorilla.cs" />
     <Compile Include="Clientes\GSI.cs" />
     <Compile Include="Dados\ExportRelatorios.cs" />
+>>>>>>> 25f17c5016f35feb7e1213f1f00b6424ae009338
     <Compile Include="Factories\RelatorioFactory.cs" />
     <Compile Include="Repositories\DbRepository.cs" />
     <Compile Include="Repositories\FileRepository.cs" />
@@ -54,7 +61,7 @@
     <Compile Include="Dados\ExportaRelatorio.cs" />
     <Compile Include="Factories\RepositoryFactory.cs" />
     <Compile Include="Dados\IRelatorio.cs" />
-    <Compile Include="Clientes\StaMaria.cs" />
+    <Compile Include="ClientesRelatorios\StaMaria.cs" />
     <Compile Include="Entity\Cliente.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

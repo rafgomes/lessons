@@ -9,8 +9,37 @@ namespace Aula17
 {
     internal class Program //Corrigindo a aula 14 com Polimorfismo
     {
+        public abstract class Animal
+        {
+            public string Coleira;
+            public string Pelo;
+            public string Olhos;
+
+            public abstract void Latir(); //permite quem herdar de animal sobrescrever a função
+
+            public string Correr() //como não é abstrato, tem que implementar
+            {
+                return "O Animal Está Correndo";
+            }
+
+        }
+
+        public class Cachorro : Animal //tem qeu obrigatoriamente, sobrescrever o metodo abstrato Latir
+        {
+            public override void Latir()
+            {
+                Console.WriteLine("Au");
+            }
+        }
+        
         static void Main(string[] args)
         {
+            //var a = new Animal(); //não pode criar uma instancia de uma classe abstrata (ou interface)
+            var cachorro = new Cachorro();
+            cachorro.Latir();
+            
+            
+            
             Console.WriteLine("======Cadastro De Clientes=====");
             Cliente c = new Cliente();
             c.Nome = "Pedro";

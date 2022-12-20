@@ -22,9 +22,10 @@ namespace Relatorios.Dados
         {
             string resultTXT = relatorio.GetRelatorio();
 
-            Console.WriteLine(resultTXT);
+           Console.WriteLine(resultTXT);
 
-            // File.WriteAllText($@"C:\Projets\Lessons\Camilo\Relatorios\DB{relatorio.Nome}_Relatorio.txt", resultTXT);
+            //File.WriteAllText($@"C:\Projets\Lessons\Camilo\Relatorios\DB{relatorio.Nome}_Relatorio.txt", resultTXT);
+            Console.ReadKey();
 
         }
     }
