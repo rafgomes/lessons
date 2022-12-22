@@ -5,7 +5,7 @@ using SistemaDeTarefas.Repositorios.Interfaces;
 
 namespace SistemaDeTarefas.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/user")]
     [ApiController] //o que é um controller?
     public class UsuarioController : ControllerBase
     {
