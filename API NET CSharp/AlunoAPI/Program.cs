@@ -19,6 +19,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection(); //redireciona para HTTPS
 
 app.MapMethods(AlunoGet.Template, AlunoGet.Metodo, AlunoGet.Func);
+app.MapMethods(IndexGet.Template, IndexGet.Metodo, IndexGet.Func);
 
 app.Run();
 
