@@ -24,14 +24,17 @@ namespace WindowsFormsApp
             e1.Nome = "SP";
             lista.Add(e1);
 
+            e1 = new Estado();
             e1.Id = 2;
             e1.Nome = "RJ";
             lista.Add(e1);
 
+            e1 = new Estado();
             e1.Id = 3;
             e1.Nome = "MG";
             lista.Add(e1);
 
+            e1 = new Estado();
             e1.Id = 4;
             e1.Nome = "GO";
             lista.Add(e1);
