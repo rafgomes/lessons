@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumindoApiAluno2", "ConsumindoApiAluno2.csproj", "{B0D42D56-4321-419A-AE84-3F5A5CB2B0FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0D42D56-4321-419A-AE84-3F5A5CB2B0FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0D42D56-4321-419A-AE84-3F5A5CB2B0FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0D42D56-4321-419A-AE84-3F5A5CB2B0FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0D42D56-4321-419A-AE84-3F5A5CB2B0FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7DADF2D2-FD30-4423-9BEE-5797CFBA49A4}
+	EndGlobalSection
+EndGlobal
